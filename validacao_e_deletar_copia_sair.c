@@ -137,6 +137,7 @@ int main()//declarando a variável main
   printf("\t1 -registrar nomes\n");
   printf("\t2 -consultar nomes\n");
   printf("\t3 -deletar nomes\n\n");
+    printf("\t4 - sair do sistema\n\n");
   printf("Opcao: ");//fim do menu
    
    scanf("%d", &opcao);//ermazenando a escolha do usuaria
@@ -158,7 +159,10 @@ int main()//declarando a variável main
 		deletar();//função deletar arquivo
 		break;//função que encerra o loop
 	
-		
+		case 4:
+		printf("obrigada por utilizar o sistema!\n");
+		return 0;
+		break;
 
 		
 		default://palavra chave reservada do sistema para imprimir um valor invalido
